@@ -1,0 +1,7 @@
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# B008 flags `Depends(...)` as a default-arg function call, but that's the
+# standard, required FastAPI dependency-injection pattern — not a bug.
+ignore = ["B008"]
